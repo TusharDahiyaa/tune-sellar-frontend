@@ -108,7 +108,7 @@ export default function PlayerUI() {
           }
 
           var current_track = state.track_window.current_track;
-          var next_track = state.track_window.next_tracks[0];
+          // var next_track = state.track_window.next_tracks[0];
 
           setCurrentTrack(current_track);
           setPaused(!state.paused);
