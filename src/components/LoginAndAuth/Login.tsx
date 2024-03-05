@@ -55,7 +55,7 @@ export default function Login() {
           className="rounded-full text-xl relative bottom-36 p-5 bg-gradient-to-b from-green-500 to-emerald-900 cursor-pointer"
           onClick={() => {
             window.location.href =
-              "https://tune-stellar-backend.vercel.app/login";
+              "https://tunestellar-backend.netlify.app/login";
           }}
         >
           Please login with your Spotify account
