@@ -16,7 +16,7 @@ const Lyrics = React.memo(() => {
         Loading.dots("Loading lyrics...");
 
         const response = await axios.get(
-          `https://tunestellar-api.vercel.app/getLyrics?songName=${currentTrack?.name}&artist=${currentTrack?.artists[0]?.name}`,
+          `https://tunestellar-api.onrender.com/getLyrics?songName=${currentTrack?.name}&artist=${currentTrack?.artists[0]?.name}`,
           {
             headers: {
               "Content-Type": "application/json",
