@@ -17,7 +17,6 @@
     "clsx": "^2.1.0",
     "flowbite": "^2.3.0",
     "genius-lyrics-api": "^3.2.1",
-    "http-proxy-middleware": "^2.0.6",
     "lucide-react": "^0.336.0",
     "notiflix": "^3.2.7",
     "react": "^17.0.0",
