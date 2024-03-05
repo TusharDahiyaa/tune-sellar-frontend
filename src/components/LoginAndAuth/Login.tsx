@@ -10,7 +10,7 @@ export default function Login() {
           className="rounded-full text-xl relative bottom-36 p-5 bg-gradient-to-b from-green-500 to-emerald-900 cursor-pointer"
           onClick={() => {
             window.location.href =
-              "https://tunestellar-backend.vercel.app/login";
+              "https://tunestellar-api.vercel.app/login";
           }}
         >
           Please login with your Spotify account

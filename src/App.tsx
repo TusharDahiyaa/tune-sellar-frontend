@@ -16,7 +16,7 @@ export default function App() {
   useEffect(() => {
     const getTokenFunction = async () => {
       axios
-        .get("https://tunestellar-backend.vercel.app/auth/getTokens")
+        .get("https://tunestellar-api.vercel.app/auth/getTokens")
         .then((response) => {
           if (
             response.data.access_token !== "" &&
@@ -94,7 +94,7 @@ export default function App() {
     try {
       await axios
         .get(
-          `https://tunestellar-backend.vercel.app/refresh_token?refresh_token=${refreshToken}`
+          `https://tunestellar-api.vercel.app/refresh_token?refresh_token=${refreshToken}`
         )
         .then((res) => {
           handleTokenResponse(res.data);
