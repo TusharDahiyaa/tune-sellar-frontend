@@ -45,7 +45,7 @@
 
 export default function Login() {
   return (
-    <div className="login text-center bg-stone-900 h-lvh bg-[url('./stars_space_glow_99744_1920x1080.jpg')] bg-cover bg-blend-overlay">
+    <div className="login text-center bg-stone-900 h-lvh bg-[url('./stars_space_bg.jpg')] bg-cover bg-blend-overlay">
       <div className="grid place-items-center h-full">
         <div className="flex items-center mx-auto">
           <img src="./TuneStellar.png" className="w-80" alt="" />
