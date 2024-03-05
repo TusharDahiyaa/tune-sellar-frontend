@@ -1,5 +1,5 @@
 import { useContextValue } from "@/utils/ContextProvider";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Loading } from "notiflix/build/notiflix-loading-aio";
 import axios from "axios";
 import { reducerCases } from "@/utils/Constants";
@@ -8,11 +8,9 @@ import { BsSoundwave } from "react-icons/bs";
 
 export default function Queue() {
   const [{ token, queueSongs, currentTrack }, dispatch] = useContextValue();
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getQueueSongs = async () => {
-      setLoading(true);
       Loading.dots("Loading Queue..");
       try {
         const response = await axios.get(
@@ -38,7 +36,6 @@ export default function Queue() {
       } catch (error) {
         console.error("Error fetching queue songs:", error);
       } finally {
-        setLoading(false);
         Loading.remove();
       }
     };

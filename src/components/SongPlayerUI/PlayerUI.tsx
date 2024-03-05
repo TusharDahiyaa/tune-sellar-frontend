@@ -7,7 +7,7 @@ import { reducerCases } from "@/utils/Constants";
 
 export default function PlayerUI() {
   const [{ token }, dispatch] = useContextValue();
-  const [is_paused, setPaused] = useState<boolean>(false);
+  const [, setPaused] = useState<boolean>(false);
   const [is_active, setActive] = useState<boolean>(false);
   const [player, setPlayer] = useState<Spotify.Player | undefined>(undefined);
   const [current_track, setCurrentTrack] = useState<any>("");
@@ -41,7 +41,7 @@ export default function PlayerUI() {
 
   useEffect(() => {
     const transferPlayback = async () => {
-      const response = await axios.put(
+      await axios.put(
         `https://api.spotify.com/v1/me/player`,
         {
           device_ids: [currentDeviceId],

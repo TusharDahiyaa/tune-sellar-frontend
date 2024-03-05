@@ -1,5 +1,4 @@
 import { GoHome } from "react-icons/go";
-import { IoIosTrendingUp } from "react-icons/io";
 import { useContextValue } from "@/utils/ContextProvider";
 import UserPlaylists from "./UserPlaylists";
 import { useEffect, useState } from "react";

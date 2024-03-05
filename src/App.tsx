@@ -11,7 +11,7 @@ export default function App() {
   const [{ token }, dispatch] = useContextValue();
   const [accessToken, setAccessToken] = useState<string | null>();
   const [refreshToken, setRefreshToken] = useState<string | null>();
-  const [expiresIn, setExpiresIn] = useState<number | null>();
+  const [, setExpiresIn] = useState<number | null>();
 
   useEffect(() => {
     const getTokenFunction = async () => {

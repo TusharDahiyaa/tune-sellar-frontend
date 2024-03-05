@@ -9,7 +9,7 @@ import axios from "axios";
 import { reducerCases } from "@/utils/Constants";
 import { formatDuration } from "../PlaylistComponents/SongRow";
 
-const PlayerControls = React.memo(({ mainPlayer, deviceId }: any) => {
+const PlayerControls = React.memo(({ mainPlayer }: any) => {
   const [
     { token, playerState, currentTrack, shuffleState, repeatMode },
     dispatch,
