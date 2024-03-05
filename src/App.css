@@ -60,6 +60,10 @@
   -webkit-background-clip: text;
 }
 
+.login {
+  background: url("./assets/stars_space_bg.jpg");
+}
+
 .sidebar-main {
   overflow: auto;
   scrollbar-width: none;
